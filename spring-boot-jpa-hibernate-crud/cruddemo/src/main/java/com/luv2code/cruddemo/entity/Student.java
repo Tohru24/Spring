@@ -1,5 +1,4 @@
-package com.example.cruddemo.entity;
-
+package com.luv2code.cruddemo.entity;
 
 import jakarta.persistence.*;
 
@@ -7,25 +6,20 @@ import jakarta.persistence.*;
 @Table(name="student")
 public class Student {
 
-
-    //define fields
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private int id;
 
-    @Column(name="first_name")
+    @Column(name = "first_name")
     private String firstName;
 
-
-    @Column(name="last_name")
+    @Column(name = "last_name")
     private String lastName;
 
-
-    @Column(name="email")
+    @Column(name = "email")
     private String email;
 
-    //define constructors
 
     public Student(){
 
@@ -36,8 +30,6 @@ public class Student {
         this.lastName = lastName;
         this.email = email;
     }
-
-    //define getters/setters
 
     public int getId() {
         return id;
@@ -70,9 +62,6 @@ public class Student {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    //define toString() method
 
     @Override
     public String toString() {
