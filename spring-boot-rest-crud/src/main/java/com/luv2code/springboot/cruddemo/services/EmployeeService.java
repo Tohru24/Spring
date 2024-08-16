@@ -1,10 +1,12 @@
-package com.luv2code.springboot.cruddemo.dao;
+package com.luv2code.springboot.cruddemo.services;
 
 import com.luv2code.springboot.cruddemo.entity.Employee;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+
+public interface EmployeeService {
 
     List<Employee> findAll();
 
@@ -12,5 +14,4 @@ public interface EmployeeDAO {
     Employee save(Employee theEmployee);
 
     void deleteById(int id);
-
 }
